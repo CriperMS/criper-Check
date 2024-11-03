@@ -1,0 +1,26 @@
+name: criper-Chheck
+version: '${version}'
+main: ru.criperms.Main
+api-version: '1.16'
+authors: [criperms]
+commands:
+  check:
+    description: Начать проверку игрока.
+    permission: cripercheck.check
+  anycheck:
+    description: Начать проверку игрока через AnyDesk.
+    permission: cripercheck.anydesk
+  mod:
+    description: Отправить сообщение модератору во время проверки.
+    permission: cripercheck.mod
+
+permissions:
+  cripercheck.use:
+    description: Позволяет использовать команду /check.
+    default: op
+  cripercheck.anydesk:
+    description: Позволяет использовать команду /anycheck для проверки через AnyDesk.
+    default: op
+  cripercheck.mod:
+    description: Позволяет игроку отправлять сообщения модератору во время проверки.
+    default: true
